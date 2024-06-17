@@ -20,7 +20,7 @@ query = "Làm sao để ứng viên không nhạy cảm với bài test đầu v
 docs = db.similarity_search(query)
 docs_and_scores = db.similarity_search_with_score(query)
 print(docs)
-print(docs_and_scores[0])
+print(docs_and_scores[0][0].page_content)
 
 
 ###########################################################
